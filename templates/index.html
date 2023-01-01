@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Chat Server</title>
+  </head>
+  <body>
+    <h1>Chat Server</h1>
+    <form action="/send" method="post">
+      <input type="text" name="message" placeholder="Enter your message">
+      <input type="submit" value="Send">
+    </form>
+    {% if message %}
+      <p>Your message: {{ message }}</p>
+    {% endif %}
+  </body>
+</html>
